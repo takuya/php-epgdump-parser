@@ -1,6 +1,16 @@
 # php-epgdump-parser
 epgdumpをphp/simplexmlでパースすする
 
+
+## usage 
+```php
+<?php
+use Takuya\RecorderUtil\EpgDumpXML\EpgDumpXmlBS;
+$dumper = new EpgDumpXmlBS($xml);
+$list = $dumper->programmes();
+```
+
+
 ## run test
 ```
 time ./vendor/bin/phpunit
