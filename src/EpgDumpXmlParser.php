@@ -2,7 +2,7 @@
 
 namespace Takuya\RecorderUtil\EpgDumpXML;
 
-class EpgDumpXmlBS {
+class EpgDumpXmlParser {
   
   protected $input;
   protected $dom;

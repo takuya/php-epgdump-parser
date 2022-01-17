@@ -2,12 +2,13 @@
 epgdumpをphp/simplexmlでパースすする
 
 
-## usage 
+## usage
+
 ```php
 <?php
-use Takuya\RecorderUtil\EpgDumpXML\EpgDumpXmlBS;
+use Takuya\RecorderUtil\EpgDumpXML\EpgDumpXmlParser;
 $stream = fopen($f_in, 'r');
-$dumper = new EpgDumpXmlBS($stream);
+$dumper = new EpgDumpXmlParser($stream);
 $list = $dumper->programmes();
 $channels = $dumper->channels();
 ```
