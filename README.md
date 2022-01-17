@@ -11,13 +11,12 @@ time ./vendor/bin/phpunit
 
 元データ
 ```xml
-  <programme start="20220117155000 +0900" stop="20220117160000 +0900" channel="4101.epgdata.ontvjapan">
-    <title lang="ja_JP">ＢＳニュース</title>
-    <desc lang="ja_JP">▽国内外のニュースや気象情報をお伝えします。　※スポーツ中継がある場合は、放送時間や内容が変更になります。</desc>
-    <category lang="ja_JP">ニュース・報道</category>
-    <category lang="en">news</category>
-  </programme>
-
+<programme start="20220117155000 +0900" stop="20220117160000 +0900" channel="4101.epgdata.ontvjapan">
+  <title lang="ja_JP">ＢＳニュース</title>
+  <desc lang="ja_JP">▽国内外のニュースや気象情報をお伝えします。　※スポーツ中継がある場合は、放送時間や内容が変更になります。</desc>
+  <category lang="ja_JP">ニュース・報道</category>
+  <category lang="en">news</category>
+</programme>
 ```
 出力配列
 ```php 
