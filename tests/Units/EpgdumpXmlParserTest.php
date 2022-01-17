@@ -11,7 +11,8 @@ class EpgdumpXmlParserTest extends TestCase {
   
   public function test_epgdump_xml_parse_BS () {
     $xml = __DIR__.'/../test-data/epgdump-sample-bs.xml';
-    $dumper = new EpgDumpXmlBS($xml);
+    $stream = fopen($xml, 'r');
+    $dumper = new EpgDumpXmlBS($stream);
     $list = $dumper->programmes();
 
     // array(5) {

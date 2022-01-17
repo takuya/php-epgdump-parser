@@ -6,7 +6,8 @@ epgdumpをphp/simplexmlでパースすする
 ```php
 <?php
 use Takuya\RecorderUtil\EpgDumpXML\EpgDumpXmlBS;
-$dumper = new EpgDumpXmlBS($xml);
+$stream = fopen($f_in, 'r');
+$dumper = new EpgDumpXmlBS($stream);
 $list = $dumper->programmes();
 $channels = $dumper->channels();
 ```
